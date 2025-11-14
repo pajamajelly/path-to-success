@@ -1,3 +1,8 @@
+/* CSS BY: PJ GRAHAM */
+
+/* Imported fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,11 +52,6 @@ table {
 	border-spacing: 0;
 }
 
-/* CSS BY: PJ GRAHAM */
-
-/* Imported fonts link */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
-
 /* Root variables for colors and fonts */
 
 :root {
@@ -70,6 +70,7 @@ table {
     --body-fonts: 'Inter', sans-serif; 
 }
 
+/* global styles */
 * {
     box-sizing: border-box;
     background-color: var(--purple);
