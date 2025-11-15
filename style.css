@@ -3,6 +3,8 @@
 /* Imported fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
+
+/* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -70,31 +72,41 @@ table {
     --body-fonts: 'Inter', sans-serif; 
 }
 
-/* global styles */
+/* global styles (mobile first/small) */
 * {
     box-sizing: border-box;
+    font-family: var(--body-fonts);
+}
+
+.mobile {
+    max-width: 450px;
+    margin: 0 auto;
     background-color: var(--purple);
 }
 
-.container {
-    background-color: var(--lavender);
-}
 
 
 /* header, h1, h2, nav */
 
 header {
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 1em;
+    background-color: var(--purple);
     color: var(--white);
     text-align: center;
 }
 
+
 h1, h2 {
     font-family: var(--heading-fonts);
     color: var(--white);
-    margin: 0.5em 0.5em;
+    padding-left: 0.5em;
+}
+
+nav h2 {
+    font-family: var(--body-fonts);
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    margin-top: 0.5em;
 }
 
 h1 {
@@ -105,13 +117,13 @@ h2 {
     font-size: 2em;
 }
 
-h2 nav {
-    font-size: 1.5em;
+.menu {
+    background-color: var(--yellow);
 }
 
-nav ul li {
-    display: flex;
-    justify-content: center;
+ul li {
+    font-variant: small-caps;
+    font-family: var(--body-fonts);
 }
 
 
@@ -120,6 +132,8 @@ nav ul li {
 h3 {
     font-size: 1.5em;
     color: var(--yellow);
+    font-weight: bolder;
+    padding: 0.5em;
 }
 
 h4 {
@@ -127,23 +141,36 @@ h4 {
     color: var(--white);
 }
 
+p {
+    font-family: var(--body-fonts);
+}
+
+/* Prices tables */
+
+#prices-table  {
+    border: 2px solid var(--yellow);
+    text-align: center;
+    margin: 0 auto;
+}
+
+#prices-table th {
+    background-color: var(--yellow);
+    font-weight: bolder;
+    padding: 1em;
+}
+
+#prices-table td {
+    background-color: var(--white);
+    padding: 0.5em;
+}
+
+
+
 /* Main, sections, body */
 
 main {
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 1em;
+    background-color: var(--purple);
 }
-
-footer {
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    color: var(--white);
-}
-
 
 /* footer */
 footer a {
