@@ -66,6 +66,7 @@ table {
     --pink: #D9526F;
     --dark-gray: :#1E1E1E; 
     --white: #ffffff; 
+    --black: #000000;
 
     /* fonts */
     --heading-fonts: 'Kavoon', cursive, sans-serif; 
@@ -75,18 +76,16 @@ table {
 /* global styles (mobile first/small) */
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lavender);
+    max-width: 450px;
+    margin: 0 auto;
     font-family: var(--body-fonts);
 }
 
-.mobile {
-    max-width: 450px;
-    margin: 0 auto;
-    background-color: var(--purple);
-}
-
-
-
-/* header, h1, h2, nav */
+/* header - h1, h2, nav */
 
 header {
     background-color: var(--purple);
@@ -98,34 +97,74 @@ header {
 h1, h2 {
     font-family: var(--heading-fonts);
     color: var(--white);
-    padding-left: 0.5em;
-}
-
-nav h2 {
-    font-family: var(--body-fonts);
-    font-weight: bold;
-    font-style: italic;
-    color: black;
-    margin-top: 0.5em;
 }
 
 h1 {
     font-size: 3em;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 h2 {
     font-size: 2em;
+    padding: 15px 0 0 15px;
 }
 
-.menu {
+nav h2 {
+    background-color: var(--yellow);
+    font-family: var(--body-fonts);
+    color: var(--black);
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    list-style-type: none;
     background-color: var(--yellow);
 }
 
-ul li {
-    font-variant: small-caps;
-    font-family: var(--body-fonts);
+nav li {
+    text-align: center;
+    text-transform: capitalize;
 }
 
+nav a {
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Services Section */
+
+#services {
+    background-color: var(--purple);
+}
+
+#flex img {
+    padding: 15px;
+}
+
+#flex > div {
+    display: block;
+    background-color: var(--white);
+    height: fit-content;
+    margin: 25px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#flex p {
+    line-height: 1.5em;
+}
 
 /* subheadings h3, h4, p */
 
@@ -133,17 +172,37 @@ h3 {
     font-size: 1.5em;
     color: var(--yellow);
     font-weight: bolder;
-    padding: 0.5em;
+    padding: 5px 0 5px 15px;
 }
 
 h4 {
     font-size: 1.15em;
-    color: var(--white);
+    color: var(--purple);
+    font-weight: bolder;
 }
 
 p {
     font-family: var(--body-fonts);
+    padding-top: 10px;
+    margin-bottom: 30px;
+
 }
+
+
+/* Choose Us List */
+
+#container {
+    background-color: var(--pink);
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#container ul {
+    display: grid;
+    grid-template-rows: max-content;
+}
+
 
 /* Prices tables */
 
@@ -161,19 +220,14 @@ p {
 
 #prices-table td {
     background-color: var(--white);
-    padding: 0.5em;
+    padding: 1em;
 }
 
-
-
-/* Main, sections, body */
-
-main {
-    background-color: var(--purple);
-}
 
 /* footer */
-footer a {
+footer {
+    display: flex;
+    justify-content: center;
     color: var(--white);
 }
 
