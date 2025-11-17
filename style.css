@@ -149,11 +149,11 @@ nav a {
     background-color: var(--purple);
 }
 
-#flex img {
+#services img {
     padding: 15px;
 }
 
-#flex > div {
+#flex1, #flex2, #flex3, #flex4, #flex5, #flex6, #flex7 > div {
     display: block;
     background-color: var(--white);
     height: fit-content;
@@ -162,7 +162,7 @@ nav a {
     padding: 25px;
 }
 
-#flex p {
+#services p {
     line-height: 1.5em;
 }
 
@@ -206,19 +206,19 @@ p {
 
 /* Prices tables */
 
-#prices-table  {
+#prices-table1, #prices-table2, #prices-table3, #prices-table4 {
     border: 2px solid var(--yellow);
     text-align: center;
     margin: 0 auto;
 }
 
-#prices-table th {
+th {
     background-color: var(--yellow);
     font-weight: bolder;
     padding: 1em;
 }
 
-#prices-table td {
+td {
     background-color: var(--white);
     padding: 1em;
 }
