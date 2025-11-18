@@ -118,18 +118,17 @@ nav h2 {
     font-style: italic;
     font-weight: bold;
     font-size: 1.5em;
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     list-style-type: none;
     background-color: var(--yellow);
-    height: 200px;
+    height: 175px;
 }
 
 nav li {
@@ -138,11 +137,12 @@ nav li {
 }
 
 nav a {
-    background-color: var(--white);
     color: var(--purple);
     font-weight: bold;
     text-decoration: none;
 }
+
+
 
 /* Services Section */
 
@@ -189,19 +189,19 @@ p {
 
 }
 
-
 /* Choose Us List */
 
-#container {
+#chooseus {
     background-color: var(--pink);
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
-#container ul {
+#chooseus ul {
+    color: var(--white);
+}
+
+.container > div {
     display: grid;
-    grid-template-rows: max-content;
+    grid-template-rows: 2;
 }
 
 
