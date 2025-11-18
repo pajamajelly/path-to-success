@@ -107,7 +107,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    padding: 15px 0 0 15px;
+    padding: 5px 0 0 15px;
 }
 
 nav h2 {
@@ -126,14 +126,15 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     list-style-type: none;
     background-color: var(--yellow);
+    height: 200px;
 }
 
 nav li {
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 nav a {
@@ -145,7 +146,7 @@ nav a {
 
 /* Services Section */
 
-#services {
+#services, #chooseus, #prices, #contact {
     background-color: var(--purple);
 }
 
@@ -172,7 +173,7 @@ h3 {
     font-size: 1.5em;
     color: var(--yellow);
     font-weight: bolder;
-    padding: 5px 0 5px 15px;
+    padding: 5px 15px;
 }
 
 h4 {
@@ -206,6 +207,10 @@ p {
 
 /* Prices tables */
 
+#prices {
+    padding: 10px;
+}
+
 #prices-table1, #prices-table2, #prices-table3, #prices-table4 {
     border: 2px solid var(--yellow);
     text-align: center;
@@ -223,12 +228,49 @@ td {
     padding: 1em;
 }
 
+/* Contact section */ 
+
+#contact {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 10px;
+}
+
+button {
+    width: 75%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+#action p {
+    font-family: var(--body-fonts);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
 
 /* footer */
 footer {
     display: flex;
     justify-content: center;
+    background-color: var(--purple);
+
+}
+
+footer a {
+    text-decoration: none;
     color: var(--white);
+}
+
+footer > p {
+    color: var(--white);
+    font-size: 0.75em;
 }
 
 
