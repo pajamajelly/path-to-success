@@ -75,50 +75,68 @@ table {
 
 /* global styles (mobile first/small) */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--lavender);
+#mobile_container {
+    background-color: var(--purple);
     max-width: 450px;
     margin: 0 auto;
+    font-family: var(--body-fonts);
+}
+
+html {
+    background-color: var(--lavender);
     font-family: var(--body-fonts);
 }
 
 /* header - h1, h2, nav */
 
 header {
-    background-color: var(--purple);
     color: var(--white);
     text-align: center;
 }
-
 
 h1, h2 {
     font-family: var(--heading-fonts);
     color: var(--white);
 }
 
+header > p {
+    font-style: italic;
+    font-family: var(--body-fonts);
+    padding-bottom: 30px;
+}
+
 h1 {
     font-size: 3em;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 30px 0 0 0;
 }
 
 h2 {
     font-size: 2em;
-    padding: 5px 0 0 15px;
+    padding: 15px 0 2px 15px;
+}
+
+/* Nav */
+
+nav {
+    background-color: var(--yellow);
+    width: auto;
+    height: 295px;
 }
 
 nav h2 {
-    background-color: var(--yellow);
     font-family: var(--body-fonts);
     color: var(--black);
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
     font-size: 1.5em;
-    padding-top: 20px;
+    padding: 15px;
 }
 
 nav ul {
@@ -127,12 +145,13 @@ nav ul {
     justify-content: center;
     gap: 10px;
     list-style-type: none;
-    background-color: var(--yellow);
-    height: 175px;
 }
 
 nav li {
-    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    width: 400px;
+    background-color: var(--white);
     text-transform: uppercase;
 }
 
@@ -142,33 +161,9 @@ nav a {
     text-decoration: none;
 }
 
-
-
-/* Services Section */
-
-#services, #chooseus, #prices, #contact {
-    background-color: var(--purple);
-}
-
-#services img {
-    padding: 15px;
-}
-
-#flex1, #flex2, #flex3, #flex4, #flex5, #flex6, #flex7 > div {
-    display: block;
-    background-color: var(--white);
-    height: fit-content;
-    margin: 25px;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-#services p {
-    line-height: 1.5em;
-}
+/* Main Sections */
 
 /* subheadings h3, h4, p */
-
 h3 {
     font-size: 1.5em;
     color: var(--yellow);
@@ -185,33 +180,59 @@ h4 {
 p {
     font-family: var(--body-fonts);
     padding-top: 10px;
-    margin-bottom: 30px;
+}
 
+
+
+/* Our Services */
+#services img {
+    padding: 10px 0 15px 5px;
+}
+
+#flex_personal, #flex_career, #flex_relationship, #flex_support, #flex_focus, #flex_interactive, #flex_flexible > div {
+    display: block;
+    background-color: var(--white);
+    margin: 15px 25px 15px 25px;
+    border-radius: 10px;
+    padding: 10px 25px 5px 25px;
+}
+
+#services p {
+    line-height: 1.5em;
+}
+
+/* subheadings h3, h4, p */
+h3 {
+    font-size: 1.5em;
+    color: var(--yellow);
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 1.15em;
+    color: var(--purple);
+    font-weight: bolder;
+}
+
+p {
+    font-family: var(--body-fonts);
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Choose Us List */
-
-#chooseus {
+#results {
     background-color: var(--pink);
 }
 
-#chooseus ul {
+#results ul {
     color: var(--white);
-}
-
-.container > div {
-    display: grid;
-    grid-template-rows: 2;
 }
 
 
 /* Prices tables */
 
-#prices {
-    padding: 10px;
-}
-
-#prices-table1, #prices-table2, #prices-table3, #prices-table4 {
+#table_one, #table_group, #table_workshops, #table_online {
     border: 2px solid var(--yellow);
     text-align: center;
     margin: 0 auto;
@@ -220,12 +241,14 @@ p {
 th {
     background-color: var(--yellow);
     font-weight: bolder;
+    text-transform: uppercase;
     padding: 1em;
 }
 
 td {
     background-color: var(--white);
     padding: 1em;
+    border: 2px solid var(--yellow);
 }
 
 /* Contact section */ 
@@ -233,26 +256,28 @@ td {
 #contact {
     background-color: var(--pink);
     color: var(--white);
+    height: 250px;
+    margin-top: 10px;
     padding: 10px;
+    line-height: 1.25em;
 }
 
 button {
     width: 75%;
-    height: 50px;
+    height: 65px;
     padding: 5px;
     border-radius: 10px;
     border: none;
+    display: inline-block;
+    justify-content: center;
 }
 
-#action p {
+#action {
     font-family: var(--body-fonts);
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
 }
-
-
-
 
 
 /* footer */
@@ -260,7 +285,6 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--purple);
-
 }
 
 footer a {
