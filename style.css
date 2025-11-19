@@ -161,6 +161,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    font-size: large;
+    color: var(--pink);
+}
+
 /* Main Sections */
 
 /* subheadings h3, h4, p */
@@ -225,8 +230,50 @@ p {
     background-color: var(--pink);
 }
 
-#results ul {
-    color: var(--white);
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#grid-container > div {
+    padding: 40px;
+    text-align: center;
+    font-family: var(--body-fonts);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#box1 {
+    background-color: var(--teal);
+    margin: 10px;
+    border-radius: 20px;
+}
+#box2 {
+    background-color: var(--lavender);
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#box2 span {
+    position: relative;
+    top: -5px;
+}
+
+#box3 {
+    background-color: var(--yellow);
+    margin: 10px;
+    border-radius: 20px;
+}
+#box4 {
+    background-color: var(--white);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#box4 span {
+    position: relative;
+    top: -5px;
 }
 
 
@@ -268,7 +315,7 @@ button {
     padding: 5px;
     border-radius: 10px;
     border: none;
-    display: inline-block;
+    display: block;
     justify-content: center;
 }
 
@@ -285,16 +332,18 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--purple);
+    height: 100px;
 }
 
 footer a {
-    text-decoration: none;
     color: var(--white);
 }
 
 footer > p {
     color: var(--white);
     font-size: 0.75em;
+    margin: 25px;
+    padding: 18px;
 }
 
 
