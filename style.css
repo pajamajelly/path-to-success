@@ -236,7 +236,7 @@ p {
 }
 
 #grid-container > div {
-    padding: 40px;
+    padding: 35px;
     text-align: center;
     font-family: var(--body-fonts);
     font-weight: bolder;
@@ -255,11 +255,6 @@ p {
     text-align: center;
 }
 
-#box2 span {
-    position: relative;
-    top: -5px;
-}
-
 #box3 {
     background-color: var(--yellow);
     margin: 10px;
@@ -269,11 +264,6 @@ p {
     background-color: var(--white);
     margin: 10px;
     border-radius: 20px;
-}
-
-#box4 span {
-    position: relative;
-    top: -5px;
 }
 
 
@@ -296,6 +286,7 @@ td {
     background-color: var(--white);
     padding: 1em;
     border: 2px solid var(--yellow);
+    text-align: left;
 }
 
 /* Contact section */ 
@@ -303,28 +294,33 @@ td {
 #contact {
     background-color: var(--pink);
     color: var(--white);
-    height: 250px;
+    height: 255px;
     margin-top: 10px;
-    padding: 10px;
-    line-height: 1.25em;
+    line-height: 1.40em;
+    text-align: center;
 }
 
-button {
-    width: 75%;
-    height: 65px;
-    padding: 5px;
-    border-radius: 10px;
-    border: none;
-    display: block;
-    justify-content: center;
+#contact_text {
+    text-align: left;
+    padding: 5px 10px 0 15px;
 }
 
 #action {
+    width: 90%;
+    height: 60px;
     font-family: var(--body-fonts);
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
+    align-items: center;
 }
+
+button {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 5px 5px;
+}
+
 
 
 /* footer */
